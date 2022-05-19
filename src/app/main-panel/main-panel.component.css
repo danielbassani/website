@@ -1,0 +1,52 @@
+.resume-panel {
+    width:75%;
+    height:800px;
+    margin:auto;
+    margin-top: 6%;
+    border-radius: 1%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.profile {
+    height:200px;
+    width: 200px;
+    border: 5px solid rgb(78, 77, 77);
+    border-radius: 50%;
+}
+
+
+hr {
+    border-top: 2px solid red;
+}
+
+.red-name {
+    color: red;
+    font-weight: bold;
+}
+
+
+div {
+    border: 1px solid blue;
+}
+
+
+/* Width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e2e2e2; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(136, 4, 4); 
+}
