@@ -1,0 +1,25 @@
+.padding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.name-title {
+    text-align: center;
+    width: 85%;
+    color: white;
+}
+
+.sidebar-nav > a {
+    margin-top: 10px;
+    background-color: #212529;
+    color: white;
+    min-height: 75px;
+    line-height: 75px;
+    font-size: 20px;
+}
+
+.sidebar-nav > a:hover {
+    background-color: #262a2f;
+    color: rgb(171, 4, 4);
+    font-size: 22px;
+}

@@ -1,0 +1,13 @@
+
+.picture {
+    background-image: url('../assets/images/code.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*
+div {
+    border: 1px solid blue;
+}
+*/

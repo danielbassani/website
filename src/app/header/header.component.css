@@ -1,0 +1,17 @@
+.select-items a:hover, a {
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-pills .active {
+    background-color: rgba(143, 36, 36, 0.661) !important;
+}
+
+.title {
+    font-size: 24px;
+    color:white;
+    vertical-align: center;
+    padding-bottom: 1px;
+    padding-left: 4em;
+}
