@@ -5,6 +5,17 @@
     border-radius: 50%;
 }
 
+.intro-text {
+    font-size: 1vw;
+}
+
+.display-5 {
+    font-size: 3vw;
+}
+
+.intro-block {
+    max-width:65%;
+}
 
 hr {
     border-top: 2px solid red;
@@ -12,4 +23,17 @@ hr {
 
 .red-name {
     color: red;
+}
+
+div {
+    border: 1px solid blue;
+}
+
+@media screen and (max-width: 1600px) {
+    .profile {
+        height:150px;
+        width: 150px;
+        border: 4px solid rgb(78, 77, 77);
+        border-radius: 50%;
+    }
 }
