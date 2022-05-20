@@ -5,7 +5,6 @@
 
 .sidebar-nav > a {
     margin-top: 10px;
-    background-color: #212529;
     color: white;
     min-height: 75px;
     line-height: 75px;
@@ -13,7 +12,11 @@
 }
 
 .sidebar-nav > a:hover {
-    background-color: #262a2f;
+    background-color: hsl(213, 11%, 17%, 0.9);
     color: rgb(171, 4, 4);
     font-size: 22px;
+}
+
+.dark-transparent {
+    background-color: hsl(210, 11%, 15%, 0.9);
 }
