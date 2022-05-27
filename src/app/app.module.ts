@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MainPanelComponent } from './main-panel/main-panel.component';
 import { IntroductionComponent } from './main-panel/introduction/introduction.component';
+import { EducationComponent } from './main-panel/education/education.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { IntroductionComponent } from './main-panel/introduction/introduction.co
     SidebarComponent,
     MainPanelComponent,
     IntroductionComponent,
+    EducationComponent,
   ],
   imports: [
     BrowserModule

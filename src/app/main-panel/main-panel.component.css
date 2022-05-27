@@ -6,12 +6,12 @@
     border-radius: 1%;
     overflow-y: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 div {
     border: 1px solid blue;
 }
-
 
 /* Width */
 ::-webkit-scrollbar {

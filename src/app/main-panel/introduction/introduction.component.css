@@ -1,8 +1,9 @@
 .profile {
-    height:200px;
-    width: 200px;
+    height:250px;
+    width: 250px;
     border: 5px solid rgb(78, 77, 77);
     border-radius: 50%;
+
 }
 
 .intro-text {
@@ -14,7 +15,8 @@
 }
 
 .intro-block {
-    max-width:65%;
+    max-width: 65%;
+    margin-left: 1vw;
 }
 
 hr {
@@ -25,9 +27,7 @@ hr {
     color: red;
 }
 
-div {
-    border: 1px solid blue;
-}
+
 
 @media screen and (max-width: 1600px) {
     .profile {

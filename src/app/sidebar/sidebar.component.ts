@@ -12,4 +12,15 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll(id: string): void {
+    const div = document.getElementById('main-panel');
+    const el = document.getElementById(id);
+
+    if (div && el) {
+      div.scrollTo({top: el.offsetTop - div.offsetTop - 15, "behavior": "smooth"});
+    } else {
+      console.warn('no main-panel or ', id);
+    }
+  }
+
 }

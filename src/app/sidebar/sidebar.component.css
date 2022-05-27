@@ -17,6 +17,15 @@
     font-size: 22px;
 }
 
-.dark-transparent {
+.dark-transparent, .sidebar-nav > a:focus {
     background-color: hsl(210, 11%, 15%, 0.9);
+}
+
+.job-entries > a {
+    background-color: rgb(136, 4, 4, 0.5);
+    color: white;
+}
+
+.job-entries > a:hover {
+    color: black;
 }
