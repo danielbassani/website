@@ -1,0 +1,34 @@
+.resume-panel {
+    width:75%;
+    height:800px;
+    margin:auto;
+    margin-top: 6%;
+    border-radius: 1%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+div {
+    border: 1px solid blue;
+}
+
+/* Width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e2e2e2; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(136, 4, 4); 
+}

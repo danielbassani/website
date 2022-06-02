@@ -1,39 +1,23 @@
-<div class="bg-dark min-vh-100">
-    <div class="row padding py-5 justify-content-center">
+<div class="row dark-transparent min-vh-100">
+    <div class="py-5" style="margin: 0 auto">
         <h2 class="display-6 border name-title">Daniel Bassani</h2>
     </div>
-    <div class="row sidebar-nav lead">
-        <a href="#" class="list-group-item list-group-item-action w-100" aria-current="true"> > Introduction</a>
+    <div class="sidebar-nav lead">
+        <a href="#" class="list-group-item list-group-item-action dark-transparent" (click)="scroll('introduction')"> > Introduction</a>
         <hr>
-        <a href="#" class="list-group-item list-group-item-action"> > Education</a>
+        <a href="#" class="list-group-item list-group-item-action dark-transparent" (click)="scroll('education')"> > Education</a>
         <hr>
-        <a href="#" class="list-group-item list-group-item-action"> > Work Experience</a>
+        <a data-bs-toggle="collapse" href="#jobs-list" class="list-group-item list-group-item-action dark-transparent"> > Work Experience</a>
+        <div id="jobs-list" class="collapse job-entries">
+            <a href="#" class="list-group-item list-group-item-action" (click)="scroll('intern')"> > Web Cloud Solutions Intern</a>
+            <a href="#" class="list-group-item list-group-item-action" (click)="scroll('ta-architecture')"> > Teaching Assistant - Computer Architecture</a>
+            <a href="#" class="list-group-item list-group-item-action" (click)="scroll('ta-logic')"> > Teaching Assistant - Logic for Computing</a>
+        </div>
         <hr>
-        <a href="#" class="list-group-item list-group-item-action"> > Skills</a>
+        <a href="#" class="list-group-item list-group-item-action dark-transparent" (click)="scroll('skills')"> > Skills</a>
     </div>
     <hr>
-    <div class="row">
+    <div>
         <button type="button" class="btn btn-secondary">GitHub</button>
     </div>
-
-        
-
-    
 </div>
-<!--
-    <div class="row padding">
-        
-    </div>
-    <div class="row padding">
-        <a href="#">Choice 1</a>
-    </div>
-    <div class="row padding">
-        <a href="#">Choice 1</a>
-    </div>
-    <div class="row padding">
-        <a href="#">Choice 1</a>
-    </div>
-    <div class="row padding">
-        <a href="#">Choice 1</a>
-    </div>
--->

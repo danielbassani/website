@@ -1,17 +1,10 @@
-.padding {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
 .name-title {
     text-align: center;
-    width: 85%;
     color: white;
 }
 
 .sidebar-nav > a {
     margin-top: 10px;
-    background-color: #212529;
     color: white;
     min-height: 75px;
     line-height: 75px;
@@ -19,7 +12,20 @@
 }
 
 .sidebar-nav > a:hover {
-    background-color: #262a2f;
+    background-color: hsl(213, 11%, 17%, 0.9);
     color: rgb(171, 4, 4);
     font-size: 22px;
+}
+
+.dark-transparent, .sidebar-nav > a:focus {
+    background-color: hsl(210, 11%, 15%, 0.9);
+}
+
+.job-entries > a {
+    background-color: rgb(136, 4, 4, 0.5);
+    color: white;
+}
+
+.job-entries > a:hover {
+    color: black;
 }
