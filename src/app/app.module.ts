@@ -7,6 +7,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MainPanelComponent } from './main-panel/main-panel.component';
 import { IntroductionComponent } from './main-panel/introduction/introduction.component';
 import { EducationComponent } from './main-panel/education/education.component';
+import { WorkExperienceComponent } from './main-panel/work-experience/work-experience.component';
+import { SkillsPanelComponent } from './skills-panel/skills-panel.component';
+import { ProjectsComponent } from './skills-panel/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { EducationComponent } from './main-panel/education/education.component';
     MainPanelComponent,
     IntroductionComponent,
     EducationComponent,
+    WorkExperienceComponent,
+    SkillsPanelComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule
