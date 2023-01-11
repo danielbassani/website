@@ -1,0 +1,24 @@
+<div class="p-3">
+    <hr>
+    <div id="job-skills" class="col-auto">
+        <h1 class="category-title">Job Skills and Technologies</h1>
+        <div class="side-margins">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="col-md-3">Languages</th>
+                        <th class="col-md-3">Frameworks</th>
+                        <th class="col-md-3">Developer Tools</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of technicalSkills">
+                        <td>{{item[0]}}</td>
+                        <td>{{item[1]}}</td>
+                        <td>{{item[2]}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -17,6 +17,11 @@
     font-size: 22px;
 }
 
+.red-transparent {
+    background-color: rgb(136, 4, 4, 0.5);
+    font-size: 22px;
+}
+
 .dark-transparent, .sidebar-nav > a:focus {
     background-color: hsl(210, 11%, 15%, 0.9);
 }

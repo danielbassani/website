@@ -10,10 +10,11 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-3">
-          <app-sidebar></app-sidebar>
+          <app-sidebar [(showSkillsPanel)]="showSkillsPanel"></app-sidebar>
         </div>
         <div class="col-9">
-          <app-main-panel></app-main-panel>
+          <app-main-panel [showSkillsPanel]="showSkillsPanel"></app-main-panel>
+          <app-skills-panel [showSkillsPanel]="showSkillsPanel"></app-skills-panel>
         </div>
       </div>
     </div>
