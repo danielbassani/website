@@ -41,15 +41,35 @@ export class SidebarComponent implements OnInit {
     }
   }
 
-  toggleSkillsPanel(): void {
-    this.showSkillsPanel = !this.showSkillsPanel;
+  makeSkillsPanelVisibleAndScroll(id: string): void {
+    // if already visible do not set a delay
+    if (this.showSkillsPanel) {
+      this.scroll(id);
+      return;
+    }
+
+    this.showSkillsPanel = true;
     this.showSkillsPanelChange.emit(this.showSkillsPanel);
 
-    if (this.showSkillsPanel) {
-      this.activePanelNav = this.skillsPanelNav;
-    } else {
-      this.activePanelNav = this.mainPanelNav;
+    this.scroll(id);
+    new Promise(f => setTimeout(f, 100)).then(() => {
+      this.scroll(id);
+    });
+  }
+
+  hideSkillsPanelAndScroll(id: string): void {
+    // if already visible do not set a delay
+    if (!this.showSkillsPanel) {
+      this.scroll(id);
+      return;
     }
+    
+    this.showSkillsPanel = false;
+    this.showSkillsPanelChange.emit(this.showSkillsPanel);
+    new Promise(f => setTimeout(f, 100)).then(() => {
+      this.scroll(id);
+    });
+    
   }
 }
 

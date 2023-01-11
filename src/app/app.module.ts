@@ -10,6 +10,8 @@ import { EducationComponent } from './main-panel/education/education.component';
 import { WorkExperienceComponent } from './main-panel/work-experience/work-experience.component';
 import { SkillsPanelComponent } from './skills-panel/skills-panel.component';
 import { ProjectsComponent } from './skills-panel/projects/projects.component';
+import { JobSkillsComponent } from './skills-panel/job-skills/job-skills.component';
+import { CourseWorkComponent } from './skills-panel/course-work/course-work.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { ProjectsComponent } from './skills-panel/projects/projects.component';
     WorkExperienceComponent,
     SkillsPanelComponent,
     ProjectsComponent,
+    JobSkillsComponent,
+    CourseWorkComponent,
   ],
   imports: [
     BrowserModule

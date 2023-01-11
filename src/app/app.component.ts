@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'website';
 
-  showSkillsPanel: boolean = true;
+  showSkillsPanel: boolean = false;
 }

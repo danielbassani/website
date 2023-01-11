@@ -1,3 +1,9 @@
+::ng-deep :root {
+    --hoverColour: hsl(213, 11%, 17%, 0.9);
+    --textRed: rgb(171, 4, 4);
+    --sidebarRed: rgb(136, 4, 4, 0.5)
+}
+
 .name-title {
     text-align: center;
     color: white;
@@ -9,28 +15,34 @@
     min-height: 75px;
     line-height: 75px;
     font-size: 20px;
+    border:none;
 }
 
-.sidebar-nav > a:hover {
-    background-color: hsl(213, 11%, 17%, 0.9);
-    color: rgb(171, 4, 4);
+.sidebar-nav > a:hover, .sidebar-nav > a:focus {
+    background-color: var(--hoverColour);
+    color: var(--textRed);
     font-size: 22px;
+    border: 1px solid var(--sidebarRed);
 }
 
 .red-transparent {
-    background-color: rgb(136, 4, 4, 0.5);
+    background-color: var(--sidebarRed);
     font-size: 22px;
 }
 
-.dark-transparent, .sidebar-nav > a:focus {
+.dark-transparent {
     background-color: hsl(210, 11%, 15%, 0.9);
 }
 
-.job-entries > a {
+.transparent {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.submenu-entries > a {
     background-color: rgb(136, 4, 4, 0.5);
     color: white;
 }
 
-.job-entries > a:hover {
+.submenu-entries > a:hover {
     color: black;
 }

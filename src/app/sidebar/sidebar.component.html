@@ -3,33 +3,25 @@
         <h2 class="display-6 border name-title">Daniel Bassani</h2>
     </div>
     <div class="sidebar-nav lead" *ngFor="let item of activePanelNav">
-        <a *ngIf="item.label === 'More...'" href="#" class="list-group-item list-group-item-action red-transparent" (click)="toggleSkillsPanel()"> > {{item.label}}</a>
+        <!-- <a *ngIf="item.label === 'More...'" href="#" class="list-group-item list-group-item-action red-transparent" (click)="toggleSkillsPanel()"> > {{item.label}}</a> -->
 
-        <a *ngIf="item.label === 'Work Experience'" data-bs-toggle="collapse" href="#jobs-list" class="list-group-item list-group-item-action dark-transparent"> > {{item.label}}</a>
+        <a *ngIf="item.label === 'More...'" data-bs-toggle="collapse" href="#more-list" class="list-group-item list-group-item-action transparent"> > {{item.label}}</a>
+        <div *ngIf="item.label === 'More...'" id="more-list" class="collapse submenu-entries">
+            <a href="#" class="list-group-item list-group-item-action" (click)="makeSkillsPanelVisibleAndScroll('projects');"> > Projects</a>
+            <a href="#" class="list-group-item list-group-item-action" (click)="makeSkillsPanelVisibleAndScroll('job-skills');"> > Job Skills & Technologies</a>
+            <a href="#" class="list-group-item list-group-item-action" (click)="makeSkillsPanelVisibleAndScroll('course-work');"> > Relevant Course Work</a>
+        </div>
+
+        <a *ngIf="item.label === 'Work Experience'" data-bs-toggle="collapse" href="#jobs-list" class="list-group-item list-group-item-action transparent"> > {{item.label}}</a>
         
-        <div *ngIf="item.label === 'Work Experience'" id="jobs-list" class="collapse job-entries">
-            <a href="#" class="list-group-item list-group-item-action" (click)="scroll('intern')"> > Web Cloud Solutions Intern</a>
-            <a href="#" class="list-group-item list-group-item-action" (click)="scroll('ta-architecture')"> > Teaching Assistant - Computer Architecture</a>
-            <a href="#" class="list-group-item list-group-item-action" (click)="scroll('ta-logic')"> > Teaching Assistant - Logic for Computing</a>
+        <div *ngIf="item.label === 'Work Experience'" id="jobs-list" class="collapse submenu-entries">
+            <a href="#" class="list-group-item list-group-item-action" (click)="hideSkillsPanelAndScroll('intern');"> > Web Cloud Solutions Intern</a>
+            <a href="#" class="list-group-item list-group-item-action" (click)="hideSkillsPanelAndScroll('ta-architecture');"> > Teaching Assistant - Computer Architecture</a>
+            <a href="#" class="list-group-item list-group-item-action" (click)="hideSkillsPanelAndScroll('ta-logic');"> > Teaching Assistant - Logic for Computing</a>
         </div>
 
-        <a *ngIf="item.label !== 'Work Experience' && item.label !== 'More...'" href="#" class="list-group-item list-group-item-action dark-transparent" (click)="scroll(item.id)"> > {{item.label}}</a>
+        <a *ngIf="item.label === 'Introduction'" href="#" class="list-group-item list-group-item-action transparent" (click)="hideSkillsPanelAndScroll('introduction')"> > {{item.label}}</a>
+        <a *ngIf="item.label === 'Education'" href="#" class="list-group-item list-group-item-action transparent" (click)="hideSkillsPanelAndScroll('education')"> > {{item.label}}</a>
     </div>
-    <!--
-    <div class="sidebar-nav lead">
-        <a href="#" class="list-group-item list-group-item-action dark-transparent" (click)="scroll('introduction')"> > Introduction</a>
-        <hr>
-        <a href="#" class="list-group-item list-group-item-action dark-transparent" (click)="scroll('education')"> > Education</a>
-        <hr>
-        <a data-bs-toggle="collapse" href="#jobs-list" class="list-group-item list-group-item-action dark-transparent"> > Work Experience</a>
-        <div id="jobs-list" class="collapse job-entries">
-            <a href="#" class="list-group-item list-group-item-action" (click)="scroll('intern')"> > Web Cloud Solutions Intern</a>
-            <a href="#" class="list-group-item list-group-item-action" (click)="scroll('ta-architecture')"> > Teaching Assistant - Computer Architecture</a>
-            <a href="#" class="list-group-item list-group-item-action" (click)="scroll('ta-logic')"> > Teaching Assistant - Logic for Computing</a>
-        </div>
-        <hr>
-        <a href="#" class="list-group-item list-group-item-action dark-transparent" (click)="toggleSkillsPanel()"> > Skills</a>
-    </div>
--->
     <hr>
 </div>
