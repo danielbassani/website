@@ -3,8 +3,6 @@
         <h2 class="display-6 border name-title">Daniel Bassani</h2>
     </div>
     <div class="sidebar-nav lead" *ngFor="let item of activePanelNav">
-        <!-- <a *ngIf="item.label === 'More...'" href="#" class="list-group-item list-group-item-action red-transparent" (click)="toggleSkillsPanel()"> > {{item.label}}</a> -->
-
         <a *ngIf="item.label === 'More...'" data-bs-toggle="collapse" href="#more-list" class="list-group-item list-group-item-action transparent"> > {{item.label}}</a>
         <div *ngIf="item.label === 'More...'" id="more-list" class="collapse submenu-entries">
             <a href="#" class="list-group-item list-group-item-action" (click)="makeSkillsPanelVisibleAndScroll('projects');"> > Projects</a>

@@ -10,6 +10,12 @@ html {
     background-repeat: no-repeat;
 }
 
+::ng-deep :root {
+    --hoverColour: hsl(213, 11%, 17%, 0.9);
+    --textRed: rgb(171, 4, 4);
+    --sidebarRed: rgb(136, 4, 4, 0.5)
+}
+
 ::ng-deep .resume-panel {
     width:75%;
     height:800px;

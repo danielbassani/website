@@ -2,3 +2,13 @@
     margin-left: 7%;
     margin-right:7%;
 }
+
+.grey-bg {
+    background-color: rgba(199, 198, 198, 0.45);
+}
+
+.icon {
+    width:30px;
+    height:30px;
+    float:right;
+}
