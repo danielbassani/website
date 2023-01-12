@@ -6,16 +6,16 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
-                        <th class="col-md-3">Languages</th>
-                        <th class="col-md-3">Frameworks</th>
-                        <th class="col-md-3">Developer Tools</th>
+                        <th class="col-md-3 grey-bg">Languages</th>
+                        <th class="col-md-3 grey-bg">Frameworks</th>
+                        <th class="col-md-3 grey-bg">Developer Tools</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let item of technicalSkills">
-                        <td>{{item[0]}}</td>
-                        <td>{{item[1]}}</td>
-                        <td>{{item[2]}}</td>
+                        <td>{{item[0].title}} <img class="icon" src="../../../assets/images/{{item[0].iconURL}}"></td>
+                        <td>{{item[1].title}} <img class="icon" src="../../../assets/images/{{item[1].iconURL}}"></td>
+                        <td>{{item[2].title}} <img class="icon" src="../../../assets/images/{{item[2].iconURL}}"></td>
                     </tr>
                 </tbody>
             </table>
