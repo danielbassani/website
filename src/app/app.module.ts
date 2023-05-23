@@ -33,4 +33,6 @@ import { CourseWorkComponent } from './skills-panel/course-work/course-work.comp
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

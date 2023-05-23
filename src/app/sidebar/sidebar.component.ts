@@ -6,7 +6,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  
+
+  public isMobile: boolean = true;
   @Input() showSkillsPanel: boolean;
   @Output() showSkillsPanelChange = new EventEmitter();
 

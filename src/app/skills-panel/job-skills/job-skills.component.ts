@@ -19,7 +19,7 @@ export class JobSkillsComponent implements OnInit {
   */
 
   technicalSkills: Array<Array<TechnicalSkill>> = [
-    [new TechnicalSkill('TypeScript', 'ts-icon.png'), new TechnicalSkill('Angular', 'angular-icon.png'), new TechnicalSkill('Google Cloud Platform', 'gcp-icon.png')],
+    [new TechnicalSkill('TypeScript', 'ts-icon.png'), new TechnicalSkill('Angular', 'angular-icon.png'), new TechnicalSkill('Google Cloud', 'gcp-icon.png')],
     [new TechnicalSkill('JavaScript', 'js-icon.png'), new TechnicalSkill('AngularJS', 'angularjs-icon.png'), new TechnicalSkill('Git', 'git-icon.png')],
     [new TechnicalSkill('Java', 'java-icon.png'), new TechnicalSkill('SpringBoot', 'sb-icon.png'), new TechnicalSkill('Gitlab', 'gitlab-icon.png')],
     [new TechnicalSkill('HTML', 'html-icon.png'), new TechnicalSkill('Cypress', 'cypress-icon.png'), new TechnicalSkill('Jenkins', 'jenkins-icon.png')],

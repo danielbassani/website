@@ -42,3 +42,37 @@
 .submenu-entries > a:hover {
     color: black;
 }
+
+@media(max-width:480px) {
+    .menu {
+        width:35px;
+        height: 35px;
+        background-color: none;
+        padding-right: none;
+    }
+
+    .dropdown-menu {
+        width: 352px;
+    }
+
+    .dropdown-item {
+        color:white;
+        margin: 7%;
+    }
+}
+
+@media(min-width:481px) and (max-width:1024px) {
+    .dropdown-menu {
+        width: 500px;
+    }
+
+    .dropdown-item {
+        color:white;
+        font-size: 24px;
+        margin: 7%;
+    }
+
+    .navbar-brand {
+        font-size: 36px;
+    }
+}

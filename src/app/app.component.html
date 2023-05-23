@@ -7,15 +7,22 @@
 
 <body>
   <div class="picture">
+    <app-sidebar [(showSkillsPanel)]="showSkillsPanel"></app-sidebar> <!-- Mobile -->
     <div class="container-fluid">
       <div class="row">
+        <!--
         <div class="col-3">
           <app-sidebar [(showSkillsPanel)]="showSkillsPanel"></app-sidebar>
         </div>
+      -->
+      <!-- 
         <div class="col-9">
           <app-main-panel [showSkillsPanel]="showSkillsPanel"></app-main-panel>
           <app-skills-panel [showSkillsPanel]="showSkillsPanel"></app-skills-panel>
         </div>
+      -->
+          <app-main-panel [showSkillsPanel]="showSkillsPanel"></app-main-panel> <!-- Mobile-->
+          <app-skills-panel [showSkillsPanel]="showSkillsPanel"></app-skills-panel> <!-- Mobile-->
       </div>
     </div>
   </div>

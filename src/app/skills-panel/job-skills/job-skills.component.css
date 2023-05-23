@@ -12,3 +12,24 @@
     height:30px;
     float:right;
 }
+
+@media(max-width:768px){
+    th {
+        font-size:14px;
+    }
+
+    td {
+        font-size:14px;
+    }
+
+    .icon {
+        width:15px;
+        height:15px;
+        float:right;
+    }
+
+    .side-margins {
+        margin-left: 0%;
+        margin-right:0%;
+    }
+}

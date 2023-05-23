@@ -1,4 +1,4 @@
-<div class="row dark-transparent min-vh-100">
+<div *ngIf="!isMobile" class="row dark-transparent min-vh-100">
     <div class="py-5" style="margin: 0 auto">
         <h2 class="display-6 border name-title">Daniel Bassani</h2>
     </div>
@@ -23,3 +23,39 @@
     </div>
     <hr>
 </div>
+
+<!-- Mobile -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Daniel Bassani</a>
+        
+        <div class="btn-group">
+            <button type="button" class="btn btn-dark" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="menu" src="../../assets/images/menu-icon-white.png">
+            </button>
+            <div class="dropdown-menu dropdown-menu-end bg-dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <li><button class="dropdown-item" type="button" (click)="hideSkillsPanelAndScroll('introduction');">Introduction</button></li>
+                            <li><button class="dropdown-item" type="button" (click)="hideSkillsPanelAndScroll('education');">Education</button></li>
+                            <li><button class="dropdown-item" type="button" (click)="hideSkillsPanelAndScroll('work-experience');">Work Experience</button></li>
+                        </div>
+
+                        <br>
+                        <div class="col">
+                            <li><button class="dropdown-item" type="button" (click)="makeSkillsPanelVisibleAndScroll('projects');">Projects</button></li>
+                            <li><button class="dropdown-item" type="button" (click)="makeSkillsPanelVisibleAndScroll('job-skills');">Job Skills & Tech</button></li>
+                            <li><button class="dropdown-item" type="button" (click)="makeSkillsPanelVisibleAndScroll('course-work');">Course Work</button></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="dropdown-menu dropdown-menu-end">
+              
+              
+            </ul>
+          </div>
+    </div>
+   
+</nav>
